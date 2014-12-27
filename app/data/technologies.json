@@ -166,5 +166,203 @@
     "id": "32",
     "name": "Transit Diodes",
     "type": "General technology"
+  }, 
+  {
+    "id": "33",
+    "name": "L4 Disruptors",
+    "type": "Racial technology",
+	"race": "1"
+  }, 
+  {
+    "id": "34",
+    "name": "Noneuclidian Shielding",
+    "type": "Racial technology",
+	"race": "1"
+  },
+  {
+    "id": "35",
+    "name": "Floating Factories",
+    "type": "Racial technology",
+	"race": "2"
+  }, 
+  {
+    "id": "36",
+    "name": "Chaos-Mapping",
+    "type": "Racial technology",
+	"race": "2"
+  },
+  {
+    "id": "37",
+    "name": "Production Centers",
+    "type": "Racial technology",
+	"race": "3"
+  },
+  {
+    "id": "38",
+    "name": "Quantum Datahub Node",
+    "type": "Racial technology",
+	"race": "3"
+  },
+  {
+    "id": "39",
+    "name": "Mark II Advanced Carriers",
+    "type": "Racial technology",
+	"race": "4"
+  },
+  {
+    "id": "40",
+    "name": "Spec Ops Training",
+    "type": "Racial technology",
+	"race": "4"
+  },
+  {
+    "id": "41",
+    "name": "Salvage Operations",
+    "type": "Racial technology",
+	"race": "5"
+  },
+  {
+    "id": "42",
+    "name": "Mirror Computing",
+    "type": "Racial technology",
+	"race": "5"
+  },
+  {
+    "id": "43",
+    "name": "Telepathic Mind Weapon",
+    "type": "Racial technology",
+	"race": "6"
+  },
+  {
+    "id": "44",
+    "name": "Hybrid Crystal Drives",
+    "type": "Racial technology",
+	"race": "6"
+  },
+  {
+    "id": "45",
+    "name": "Valefar Assimilator",
+    "type": "Racial technology",
+	"race": "7"
+  },
+  {
+    "id": "46",
+    "name": "Valkyrie Armor",
+    "type": "Racial technology",
+	"race": "8"
+  },
+  {
+    "id": "47",
+    "name": "Exotrireme",
+    "type": "Racial technology",
+	"race": "8"
+  },
+  {
+    "id": "48",
+    "name": "Spatial Conduit Network",
+    "type": "Racial technology",
+	"race": "9"
+  },
+  {
+    "id": "49",
+    "name": "Electro-Resonance Turbines",
+    "type": "Racial technology",
+	"race": "9"
+  },
+  {
+    "id": "50",
+    "name": "Bioptic Recyclers",
+    "type": "Racial technology",
+	"race": "10"
+  },
+  {
+    "id": "51",
+    "name": "Lazax Gate Folding",
+    "type": "Racial technology",
+	"race": "10"
+  },
+  {
+    "id": "52",
+    "name": "Diplomats",
+    "type": "Racial technology",
+	"race": "11"
+  },
+  {
+    "id": "53",
+    "name": "Instinct Training",
+    "type": "Racial technology",
+	"race": "11"
+  },
+  {
+    "id": "54",
+    "name": "Shuttle Logistics",
+    "type": "Racial technology",
+	"race": "12"
+  },
+  {
+    "id": "55",
+    "name": "Mageon Implants",
+    "type": "Racial technology",
+	"race": "12"
+  },
+  {
+    "id": "56",
+    "name": "Fanaticism",
+    "type": "Racial technology",
+	"race": "13"
+  },
+  {
+    "id": "57",
+    "name": "Yin Spinner",
+    "type": "Racial technology",
+	"race": "13"
+  },
+  {
+    "id": "58",
+    "name": "Magmus Reactor",
+    "type": "Racial technology",
+	"race": "14"
+  },
+  {
+    "id": "59",
+    "name": "Nova Seed",
+    "type": "Racial technology",
+	"race": "14"
+  },
+  {
+    "id": "60",
+    "name": "Dimensional Splicers",
+    "type": "Racial technology",
+	"race": "15"
+  },
+  {
+    "id": "61",
+    "name": "Slave Wormhole Generator",
+    "type": "Racial technology",
+	"race": "15"
+  },
+  {
+    "id": "62",
+    "name": "Dreadnought Invasion Pod",
+    "type": "Racial technology",
+	"race": "16"
+  },
+  {
+    "id": "63",
+    "name": "Inheritance Systems",
+    "type": "Racial technology",
+	"race": "16"
+  },
+  {
+    "id": "64",
+    "name": "Bioplasmosis",
+    "type": "Racial technology",
+	"race": "17"
+  },
+  {
+    "id": "65",
+    "name": "Spore Acceleration",
+    "type": "Racial technology",
+	"race": "17"
   }
 ]
