@@ -2,79 +2,94 @@
   {
     "id": "1",
     "name": "The Barony of Letnev",
-    "icon": "images/races/letnev.png",
+    "icon": "images/races/the_barony_of_letnev.gif"
     "startingTechs" : ["1","9"]
   },
   {
     "id": "2",
     "name": "The Clan of Saar",
-    "expansion": "Shattered Empire"
+    "expansion": "Shattered Empire",
+    "icon": "images/races/the_clan_of_saar.gif"
   },
   {
     "id": "3",
     "name": "The Emirates of Hacan",
-    "icon": "images/races/hacan.png"
+    "icon": "images/races/the_emirates_of_hacan.gif"
   },
   {
     "id": "4",
-    "name": "The Federation of Sol"
+    "name": "The Federation of Sol",
+    "icon": "images/races/the_federation_of_sol.gif"
   },
   {
     "id": "5",
-    "name": "The Mentak Coalition"
+    "name": "The Mentak Coalition",
+    "icon": "images/races/the_mentak_coalition.gif"
   },
   {
     "id": "6",
-    "name": "The Naalu Collective"
+    "name": "The Naalu Collective",
+    "icon": "images/races/the_naalu_collective.gif"
   },
   {
     "id": "7",
     "name": "The Nekro Virus",
+    "icon": "images/races/the-nekro-virus.png",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "8",
-    "name": "The Sardakk N’orr"
+    "name": "The Sardakk N’orr",
+    "icon": "images/races/the_sardakk_norr.gif"
   },
   {
     "id": "9",
-    "name": "The Universities of Jol-Nar"
+    "name": "The Universities of Jol-Nar",
+    "icon": "images/races/universities_of_jol-nar.gif"
   },
   {
     "id": "10",
     "name": "The Winnu",
+    "icon": "images/races/the_winnu.gif",
     "expansion": "Shattered Empire"
   },
   {
     "id": "11",
-    "name": "The Xxcha Kingdom"
+    "name": "The Xxcha Kingdom",
+    "icon": "images/races/the_xxcha_kingdom.gif"
   },
   {
     "id": "12",
-    "name": "The Yssaril Tribes"
+    "name": "The Yssaril Tribes",
+    "icon": "images/races/the_yssaril_tribes.gif"
   },
   {
     "id": "13",
     "name": "The Brotherhood of Yin",
-    "expansion": "Shattered Empire"
+    "expansion": "Shattered Empire",
+    "icon": "images/races/the_yin_brotherhood.gif"
   },
   {
     "id": "14",
     "name": "The Embers of Muaat",
+    "icon": "images/races/embers_of_muaat.jpg",
     "expansion": "Shattered Empire"
   },
   {
     "id": "15",
     "name": "The Ghosts of Creuss",
+    "icon": "images/races/the-ghosts-of-creuss.png",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "16",
-    "name": "The L1z1x Mindnet"
+    "name": "The L1z1x Mindnet",
+    "icon": "images/races/the_l1z1x_mindnet.gif"
   },
   {
     "id": "17",
     "name": "The Arborec",
+    "icon": "images/races/the-arborec.png",
     "expansion": "Shards of the Throne"
   }
 ]
