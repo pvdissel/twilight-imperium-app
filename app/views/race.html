@@ -1,1 +1,5 @@
-<p>This is the about view.</p>
+<div id="raceSelect">
+  <div ng-repeat="race in races">
+    <div ng-click="setRace('{{race.id}}')"><img ng-src="{{race.icon}}"/> {{race.name}}</div>
+  </div>
+</div>

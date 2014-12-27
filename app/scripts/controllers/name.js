@@ -2,16 +2,14 @@
 
 /**
  * @ngdoc function
- * @name twimp3App.controller:MainCtrl
+ * @name twimp3App.controller:NameController
  * @description
- * # MainCtrl
+ * # NameController
  * Controller of the twimp3App
  */
 angular.module('twimp3App')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('NameController', function ($scope, $location) {
+    $scope.next = function () {
+      $location.path("/race")
+    }
   });

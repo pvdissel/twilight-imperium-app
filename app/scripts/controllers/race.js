@@ -8,10 +8,12 @@
  * Controller of the twimp3App
  */
 angular.module('twimp3App')
-  .controller('AboutCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('RaceController', function ($scope, $http) {
+    $http.get('data/races.json').success(function(data) {
+      $scope.races = data;
+    });
+
+    $scope.setRace = function(id){
+      alert(id);
+    }
   });
