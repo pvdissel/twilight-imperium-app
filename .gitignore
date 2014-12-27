@@ -8,3 +8,4 @@ www/
 platforms/android/assets/
 platforms/android/CordovaLib/ant-build/
 platforms/android/ant-build/
+.DS_Store
