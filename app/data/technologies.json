@@ -7,7 +7,8 @@
   {
     "id": "2",
     "name": "Automated Defense Turrets",
-    "type": "Warfare technology"
+    "type": "Warfare technology",
+    "expansion": "Shattered Empire"
   },
   {
     "id": "3",
@@ -22,7 +23,8 @@
   {
     "id": "5",
     "name": "Duranium Armor",
-    "type": "Warfare technology"
+    "type": "Warfare technology",
+    "expansion": "Shards of the Throne"
   },
   {
     "id": "6",
@@ -47,7 +49,8 @@
   {
     "id": "10",
     "name": "Gravity Drive",
-    "type": "Warfare technology"
+    "type": "Warfare technology",
+    "expansion": "Shards of the Throne"
   },
   {
     "id": "11",
@@ -57,7 +60,8 @@
   {
     "id": "12",
     "name": "Maneuvering Jets",
-    "type": "Warfare technology"
+    "type": "Warfare technology",
+    "expansion": "Shattered Empire"
   },
   {
     "id": "13",
@@ -107,12 +111,14 @@
   {
     "id": "22",
     "name": "Hyper Metabolism",
-    "type": "Biotechnology"
+    "type": "Biotechnology",
+    "expansion": "Shattered Empire"
   },
   {
     "id": "23",
     "name": "Neural Computing",
-    "type": "Biotechnology"
+    "type": "Biotechnology",
+    "expansion": "Shards of the Throne"
   },
   {
     "id": "24",
@@ -127,7 +133,8 @@
   {
     "id": "26",
     "name": "Transfabrication",
-    "type": "General technology"
+    "type": "General technology",
+	"expansion": "Shards of the Throne"
   },
   {
     "id": "27",
@@ -147,7 +154,8 @@
   {
     "id": "30",
     "name": "Nano Technology",
-    "type": "General technology"
+    "type": "General technology",
+    "expansion": "Shattered Empire"
   },
   {
     "id": "31",
