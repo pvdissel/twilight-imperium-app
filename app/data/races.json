@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "The Emirates of Hacan",
+    "icon": "images/races/hacan.png"
+  },
+  {
+    "id": 2,
+    "name": "The Barony of Letnev",
+    "icon": "images/races/letnev.png"
+  }
+]
