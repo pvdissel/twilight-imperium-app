@@ -3,8 +3,16 @@
   <button>Tech</button>
   <button>Combat</button>
   <button>Unit</button>
-  <h3>Racial Technologies</h3>
-  <div id="racialTechs" ng-repeat="tech in racialTechs">
+  <h3>Starting Technologies</h3>
+  <div id="startingTechs" ng-repeat="tech in startingTechs">
     <p>{{tech.name}}</p>
+  </div>
+  <h3>Acquired Technologies</h3>
+  <div id="acquiredTechs" ng-repeat="tech in acquiredTechs">
+    <p>{{tech.name}}</p>
+  </div>
+  <h3>All Technologies</h3>
+  <div id="allTechs" ng-repeat="tech in allTechs">
+    <p ng-click="add('{{tech.id}}')">{{tech.name}}</p>
   </div>
 </div>
