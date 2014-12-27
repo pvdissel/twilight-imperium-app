@@ -1,0 +1,5 @@
+
+
+run:
+
+grunt build [-force]

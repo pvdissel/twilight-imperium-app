@@ -4,3 +4,7 @@ dist
 .sass-cache
 bower_components
 .idea
+www/
+platforms/android/assets/
+platforms/android/CordovaLib/ant-build/
+platforms/android/ant-build/
