@@ -6,7 +6,7 @@
     var currentRace;
     var allTechnologies;
     var racialTechs;
-    var acquiredTechs;
+    var acquiredTechs = [];
     var player = [];
 
 
@@ -37,9 +37,9 @@
       return result;
     }
 
-    var isInArray = function(needle, haystack){
-      for (var i = 0;i < haystack.length;i++){
-        if (haystack[i] == needle){
+    var isInArray = function (needle, haystack) {
+      for (var i = 0; i < haystack.length; i++) {
+        if (haystack[i] == needle) {
           return true;
         }
       }
@@ -51,6 +51,14 @@
       for (var i = 0; i < races.length; i++) {
         if (races[i].id == id) {
           return races[i];
+        }
+      }
+    }
+
+    function findTech(id) {
+      for (var i = 0; i < races.length; i++) {
+        if (allTechnologies[i].id == id) {
+          return allTechnologies[i];
         }
       }
     }
@@ -68,8 +76,20 @@
       return races;
     }
 
-    var getRacialTechs = function(){
+    var getStartingTechs = function () {
       return racialTechs;
+    }
+
+    var getAcquiredTechs = function () {
+      return acquiredTechs;
+    }
+
+    var getAllTechs = function () {
+      return allTechnologies;
+    }
+
+    var acquireTech = function (id) {
+      acquiredTechs.push(findTech(id));
     }
 
     return {
@@ -78,7 +98,10 @@
       getPlayer: getPlayer,
       getRaces: getRaces,
       getCurrentRace: getCurrentRace,
-      getRacialTechs: getRacialTechs
+      getStartingTechs: getStartingTechs,
+      getAcquiredTechs: getAcquiredTechs,
+      getAllTechs: getAllTechs,
+      acquireTech:acquireTech
     };
   }
 
