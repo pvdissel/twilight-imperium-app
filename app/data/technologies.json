@@ -1,166 +1,162 @@
-{"technologies": 
-	{"technology": 
-		[	
-			{
-				"id": "1", 
-				"name": "Hylar V Assault Laser", 
-				"type": "Warfare technology"
-			},
-			{
-				"id": "2", 
-				"name": "Automated Defense Turrets", 
-				"type": "Warfare technology"
-			},
-			{
-				"id": "3", 
-				"name": "Deep Space Cannon", 
-				"type": "Warfare technology"
-			},
-			{
-				"id": "4", 
-				"name": "Magen Defense Grid", 
-				"type": "Warfare technology"
-			},
-			{
-				"id": "5", 
-				"name": "Duranium Armor", 
-				"type": "Warfare technology"
-			},
-			{
-				"id": "6", 
-				"name": "Assault Cannon", 
-				"type": "Warfare technology"
-			},
-			{
-				"id": "7", 
-				"name": "Graviton Negator", 
-				"type": "Warfare technology"
-			},
-			{
-				"id": "8", 
-				"name": "War Sun", 
-				"type": "Warfare technology"
-			},
-			{
-				"id": "9", 
-				"name": "Antimass Deflectors", 
-				"type": "Propulsion technology"
-			},
-			{
-				"id": "10", 
-				"name": "Gravity Drive", 
-				"type": "Warfare technology"
-			},
-			{
-				"id": "11", 
-				"name": "XRD Transporters", 
-				"type": "Warfare technology"
-			},
-			{
-				"id": "12", 
-				"name": "Maneuvering Jets", 
-				"type": "Warfare technology"
-			},
-			{
-				"id": "13", 
-				"name": "Fleet Logistics", 
-				"type": "Warfare technology"
-			},
-			{
-				"id": "14", 
-				"name": "Light/Wave Deflector", 
-				"type": "Warfare technology"
-			},
-			{
-				"id": "15", 
-				"name": "Type IV Drive", 
-				"type": "Warfare technology"
-			},
-			{
-				"id": "16", 
-				"name": "Advanced Fighters", 
-				"type": "Warfare technology"
-			},
-			{
-				"id": "17", 
-				"name": "Cybernetics", 
-				"type": "Biotechnology"
-			},
-			{
-				"id": "18", 
-				"name": "Stasis Capsules", 
-				"type": "Biotechnology"
-			},
-			{
-				"id": "19", 
-				"name": "Gen Synthesis", 
-				"type": "Biotechnology"
-			},
-			{
-				"id": "20", 
-				"name": "Neural Motivator", 
-				"type": "Biotechnology"
-			},
-			{
-				"id": "21", 
-				"name": "Dacxive Animators", 
-				"type": "Biotechnology"
-			},
-			{
-				"id": "22", 
-				"name": "Hyper Metabolism", 
-				"type": "Biotechnology"
-			},
-			{
-				"id": "23", 
-				"name": "Neural Computing", 
-				"type": "Biotechnology"
-			},
-			{
-				"id": "24", 
-				"name": "X-89 Bacterial Weapon", 
-				"type": "Biotechnology"
-			},
-			{
-				"id": "25", 
-				"name": "Enviro Compensator", 
-				"type": "General technology"
-			},
-			{
-				"id": "26", 
-				"name": "Transfabrication", 
-				"type": "General technology"
-			},
-			{
-				"id": "27", 
-				"name": "Sarween Tools", 
-				"type": "General technology"
-			},
-			{
-				"id": "28", 
-				"name": "Graviton Laser System", 
-				"type": "General technology"
-			},
-			{
-				"id": "29", 
-				"name": "Micro Technology", 
-				"type": "General technology"
-			},
-			{
-				"id": "30", 
-				"name": "Nano Technology", 
-				"type": "General technology"
-			},
-			{
-				"id": "31", 
-				"name": "Integrated Economy", 
-				"type": "General technology"
-			},
-			{
-				"id": "32", 
-				"name": "Transit Diodes", 
-				"type": "General technology"
-			}
-		]
-	}
-}
+[
+  {
+    "id": "1",
+    "name": "Hylar V Assault Laser",
+    "type": "Warfare technology"
+  },
+  {
+    "id": "2",
+    "name": "Automated Defense Turrets",
+    "type": "Warfare technology"
+  },
+  {
+    "id": "3",
+    "name": "Deep Space Cannon",
+    "type": "Warfare technology"
+  },
+  {
+    "id": "4",
+    "name": "Magen Defense Grid",
+    "type": "Warfare technology"
+  },
+  {
+    "id": "5",
+    "name": "Duranium Armor",
+    "type": "Warfare technology"
+  },
+  {
+    "id": "6",
+    "name": "Assault Cannon",
+    "type": "Warfare technology"
+  },
+  {
+    "id": "7",
+    "name": "Graviton Negator",
+    "type": "Warfare technology"
+  },
+  {
+    "id": "8",
+    "name": "War Sun",
+    "type": "Warfare technology"
+  },
+  {
+    "id": "9",
+    "name": "Antimass Deflectors",
+    "type": "Propulsion technology"
+  },
+  {
+    "id": "10",
+    "name": "Gravity Drive",
+    "type": "Warfare technology"
+  },
+  {
+    "id": "11",
+    "name": "XRD Transporters",
+    "type": "Warfare technology"
+  },
+  {
+    "id": "12",
+    "name": "Maneuvering Jets",
+    "type": "Warfare technology"
+  },
+  {
+    "id": "13",
+    "name": "Fleet Logistics",
+    "type": "Warfare technology"
+  },
+  {
+    "id": "14",
+    "name": "Light/Wave Deflector",
+    "type": "Warfare technology"
+  },
+  {
+    "id": "15",
+    "name": "Type IV Drive",
+    "type": "Warfare technology"
+  },
+  {
+    "id": "16",
+    "name": "Advanced Fighters",
+    "type": "Warfare technology"
+  },
+  {
+    "id": "17",
+    "name": "Cybernetics",
+    "type": "Biotechnology"
+  },
+  {
+    "id": "18",
+    "name": "Stasis Capsules",
+    "type": "Biotechnology"
+  },
+  {
+    "id": "19",
+    "name": "Gen Synthesis",
+    "type": "Biotechnology"
+  },
+  {
+    "id": "20",
+    "name": "Neural Motivator",
+    "type": "Biotechnology"
+  },
+  {
+    "id": "21",
+    "name": "Dacxive Animators",
+    "type": "Biotechnology"
+  },
+  {
+    "id": "22",
+    "name": "Hyper Metabolism",
+    "type": "Biotechnology"
+  },
+  {
+    "id": "23",
+    "name": "Neural Computing",
+    "type": "Biotechnology"
+  },
+  {
+    "id": "24",
+    "name": "X-89 Bacterial Weapon",
+    "type": "Biotechnology"
+  },
+  {
+    "id": "25",
+    "name": "Enviro Compensator",
+    "type": "General technology"
+  },
+  {
+    "id": "26",
+    "name": "Transfabrication",
+    "type": "General technology"
+  },
+  {
+    "id": "27",
+    "name": "Sarween Tools",
+    "type": "General technology"
+  },
+  {
+    "id": "28",
+    "name": "Graviton Laser System",
+    "type": "General technology"
+  },
+  {
+    "id": "29",
+    "name": "Micro Technology",
+    "type": "General technology"
+  },
+  {
+    "id": "30",
+    "name": "Nano Technology",
+    "type": "General technology"
+  },
+  {
+    "id": "31",
+    "name": "Integrated Economy",
+    "type": "General technology"
+  },
+  {
+    "id": "32",
+    "name": "Transit Diodes",
+    "type": "General technology"
+  }
+]
