@@ -8,10 +8,9 @@
  * Controller of the twimp3App
  */
 angular.module('twimp3App')
-  .controller('RaceController', function ($scope, $http) {
-    $http.get('data/races.json').success(function(data) {
-      $scope.races = data;
-    });
+  .controller('RaceController', function ($scope, twimpService) {
+    $scope.races = twimpService.getRaces();
+    $scope.player = twimpService.getPlayer();
 
     $scope.setRace = function(id){
       alert(id);

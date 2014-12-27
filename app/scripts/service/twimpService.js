@@ -10,6 +10,9 @@
       races = data;
     });
 
+    var getPlayer = function(){
+      return player;
+    }
 
     var setName = function(name){
       player.name = name;
@@ -19,13 +22,20 @@
       currentRace = id;
     }
 
+    var getRaces = function(){
+      return races;
+    }
+
     return {
       setName: setName,
-      setRace: setRace
+      setRace: setRace,
+      getPlayer:getPlayer,
+      getRaces:getRaces
+
     };
   }
 
-  var module = angular.module("twimp3App", []);
+  var module = angular.module("twimp3App");
 
   module.factory("twimpService", twimpService);
 

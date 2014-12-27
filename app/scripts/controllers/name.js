@@ -8,8 +8,9 @@
  * Controller of the twimp3App
  */
 angular.module('twimp3App')
-  .controller('NameController', function ($scope, $location) {
+  .controller('NameController', function ($scope, $location, twimpService) {
     $scope.next = function () {
+      twimpService.setName($scope.name);
       $location.path("/race")
     }
   });
