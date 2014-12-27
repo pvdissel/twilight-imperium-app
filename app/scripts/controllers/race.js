@@ -8,11 +8,12 @@
  * Controller of the twimp3App
  */
 angular.module('twimp3App')
-  .controller('RaceController', function ($scope, twimpService) {
+  .controller('RaceController', function ($scope, $location, twimpService) {
     $scope.races = twimpService.getRaces();
     $scope.player = twimpService.getPlayer();
 
     $scope.setRace = function(id){
-      alert(id);
+      twimpService.setRace(id);
+      $location.path("/overview");
     }
   });

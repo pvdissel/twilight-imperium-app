@@ -27,6 +27,10 @@ angular
         templateUrl: 'views/race.html',
         controller: 'RaceController'
       })
+      .when('/overview', {
+        templateUrl: 'views/overview.html',
+        controller: 'OverviewController'
+      })
       .otherwise({
         redirectTo: '/name'
       });

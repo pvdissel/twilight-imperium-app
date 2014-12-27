@@ -3,8 +3,10 @@
 (function(){
   var twimpService = function($http){
     var races;
+    var currentRaceId;
     var currentRace;
     var player = [];
+
 
     $http.get('data/races.json').success(function(data) {
       races = data;
@@ -19,7 +21,18 @@
     }
 
     var setRace = function(id){
-      currentRace = id;
+      currentRaceId = id;
+
+      for (var i = 0 ; i< races.length;i++){
+        if (races[i].id == currentRaceId){
+          currentRace = races[i];
+          break;
+        }
+      }
+    }
+
+    var getCurrentRace = function(){
+      return currentRace;
     }
 
     var getRaces = function(){
@@ -30,8 +43,8 @@
       setName: setName,
       setRace: setRace,
       getPlayer:getPlayer,
-      getRaces:getRaces
-
+      getRaces:getRaces,
+      getCurrentRace:getCurrentRace
     };
   }
 
