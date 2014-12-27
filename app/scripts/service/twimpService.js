@@ -1,50 +1,84 @@
 'use strict';
 
-(function(){
-  var twimpService = function($http){
+(function () {
+  var twimpService = function ($http) {
     var races;
-    var currentRaceId;
     var currentRace;
+    var allTechnologies;
+    var racialTechs;
+    var acquiredTechs;
     var player = [];
 
 
-    $http.get('data/races.json').success(function(data) {
+    $http.get('data/races.json').success(function (data) {
       races = data;
     });
 
-    var getPlayer = function(){
+    $http.get('data/technologies.json').success(function (data) {
+      allTechnologies = data;
+    });
+
+    var getPlayer = function () {
       return player;
     }
 
-    var setName = function(name){
+    var setName = function (name) {
       player.name = name;
     }
 
-    var setRace = function(id){
-      currentRaceId = id;
+    function determineRacialTechs() {
+      var result = [];
+      for (var i = 0; i < allTechnologies.length; i++) {
+        if (isInArray(allTechnologies[i].id, currentRace.startingTechs)) {
+          result.push(allTechnologies[i]);
+        }
+      }
 
-      for (var i = 0 ; i< races.length;i++){
-        if (races[i].id == currentRaceId){
-          currentRace = races[i];
-          break;
+      return result;
+    }
+
+    var isInArray = function(needle, haystack){
+      for (var i = 0;i < haystack.length;i++){
+        if (haystack[i] == needle){
+          return true;
+        }
+      }
+
+      return false;
+    }
+
+    function findRace(id) {
+      for (var i = 0; i < races.length; i++) {
+        if (races[i].id == id) {
+          return races[i];
         }
       }
     }
 
-    var getCurrentRace = function(){
+    var setRace = function (id) {
+      currentRace = findRace(id);
+      racialTechs = determineRacialTechs();
+    }
+
+    var getCurrentRace = function () {
       return currentRace;
     }
 
-    var getRaces = function(){
+    var getRaces = function () {
       return races;
+    }
+
+    var getRacialTechs = function(){
+      return racialTechs;
     }
 
     return {
       setName: setName,
       setRace: setRace,
-      getPlayer:getPlayer,
-      getRaces:getRaces,
-      getCurrentRace:getCurrentRace
+      getPlayer: getPlayer,
+      getRaces: getRaces,
+      getCurrentRace: getCurrentRace,
+      getRacialTechs: getRacialTechs
     };
   }
 

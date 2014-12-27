@@ -2,7 +2,8 @@
   {
     "id": "1",
     "name": "The Barony of Letnev",
-    "icon": "images/races/letnev.png"
+    "icon": "images/races/letnev.png",
+    "startingTechs" : ["1","9"]
   },
   {
     "id": "2",

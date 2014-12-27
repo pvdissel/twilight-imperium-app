@@ -11,4 +11,5 @@ angular.module('twimp3App')
   .controller('OverviewController', function ($scope, $location, twimpService) {
     $scope.currentRace = twimpService.getCurrentRace();
     $scope.player = twimpService.getPlayer();
+    $scope.racialTechs = twimpService.getRacialTechs();
   });
