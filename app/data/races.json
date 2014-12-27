@@ -1,12 +1,82 @@
-[
-  {
-    "id": 1,
-    "name": "The Emirates of Hacan",
-    "icon": "images/races/hacan.png"
-  },
-  {
-    "id": 2,
-    "name": "The Barony of Letnev",
-    "icon": "images/races/letnev.png"
-  }
-]
+{"races": 
+	{"race": 
+		[	
+			{
+				"id": "1", 
+				"name": "The Barony of Letnev", 
+				"icon": "images/races/letnev.png"
+			},
+			{
+				"id": "2", 
+				"name": "The Clan of Saar",
+				"expansion": "Shattered Empire"
+			},
+			{
+				"id": "3", 
+				"name": "The Emirates of Hacan",
+				"icon": "images/races/hacan.png"
+			},
+			{
+				"id": "4",
+				"name": "The Federation of Sol"
+			},
+			{
+				"id": "5",
+				"name": "The Mentak Coalition"
+			},
+			{
+				"id": "6","name": "The Naalu Collective"
+			},
+			{
+				"id": "7",
+				"name": "The Nekro Virus", 
+				"expansion": "Shards of the Throne"
+			},
+			{
+				"id": "8", 
+				"name": "The Sardakk N’orr"
+			},
+			{
+				"id": "9",
+				"name": "The Universities of Jol-Nar"
+			},
+			{
+				"id": "10",
+				"name": "The Winnu", 
+				"expansion": "Shattered Empire"
+			},
+			{
+				"id": "11",
+				"name": "The Xxcha Kingdom"
+			},
+			{
+				"id": "12", 
+				"name": "The Yssaril Tribes"
+			}, 
+			{
+				"id": "13", 
+				"name": "The Brotherhood of Yin", 
+				"expansion": "Shattered Empire"
+			},
+			{
+				"id": "14", 
+				"name": "The Embers of Muaat", 
+				"expansion": "Shattered Empire"
+			},
+			{
+				"id": "15", 
+				"name": "The Ghosts of Creuss", 
+				"expansion": "Shards of the Throne"
+			},
+			{
+				"id": "16", 
+				"name": "The L1z1x Mindnet"
+			},
+			{
+				"id": "17", 
+				"name": "The Arborec", 
+				"expansion": "Shards of the Throne"
+			}
+		]
+	}
+}
