@@ -2,7 +2,7 @@
   {
     "id": "1",
     "name": "The Barony of Letnev",
-    "icon": "images/races/the_barony_of_letnev.gif"
+    "icon": "images/races/the_barony_of_letnev.gif",
     "startingTechs" : ["1","9"]
   },
   {

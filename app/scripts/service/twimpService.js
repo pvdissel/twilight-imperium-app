@@ -1,10 +1,13 @@
 'use strict';
 
 (function () {
+
+
   var twimpService = function ($http) {
     var races;
     var currentRace;
     var allTechnologies;
+    var availableTechs;
     var racialTechs;
     var acquiredTechs = [];
     var player = [];
@@ -66,6 +69,15 @@
     var setRace = function (id) {
       currentRace = findRace(id);
       racialTechs = determineRacialTechs();
+      availableTechs = allTechnologies.slice(0);
+
+      removeRacialFromAvailableTechs(racialTechs);
+    }
+
+    function removeRacialFromAvailableTechs(racialTechs) {
+      for (var i = 0; i < racialTechs.length; i++) {
+        removeFromAvailableTechs(racialTechs[i]);
+      }
     }
 
     var getCurrentRace = function () {
@@ -84,12 +96,27 @@
       return acquiredTechs;
     }
 
-    var getAllTechs = function () {
-      return allTechnologies;
+    var getAvailableTechs = function () {
+      return availableTechs;
     }
 
     var acquireTech = function (id) {
-      acquiredTechs.push(findTech(id));
+      var tech = findTech(id);
+      acquiredTechs.push(tech);
+      removeFromAvailableTechs(tech);
+    }
+
+    var unAcquireTech = function (id) {
+      var tech = findTech(id);
+      var index = acquiredTechs.indexOf(tech);
+
+      acquiredTechs.splice(index, 1);
+      availableTechs.push(tech);
+    }
+
+    function removeFromAvailableTechs(tech) {
+      var index = allTechnologies.indexOf(tech);
+      availableTechs.splice(index, 1);
     }
 
     return {
@@ -100,8 +127,9 @@
       getCurrentRace: getCurrentRace,
       getStartingTechs: getStartingTechs,
       getAcquiredTechs: getAcquiredTechs,
-      getAllTechs: getAllTechs,
-      acquireTech:acquireTech
+      getAvailableTechs: getAvailableTechs,
+      acquireTech: acquireTech,
+      unAcquireTech: unAcquireTech
     };
   }
 

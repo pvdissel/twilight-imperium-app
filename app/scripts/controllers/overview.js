@@ -13,9 +13,13 @@ angular.module('twimp3App')
     $scope.player = twimpService.getPlayer();
     $scope.startingTechs = twimpService.getStartingTechs();
     $scope.acquiredTechs = twimpService.getAcquiredTechs();
-    $scope.allTechs = twimpService.getAllTechs();
+    $scope.availableTechs = twimpService.getAvailableTechs();
 
     $scope.add = function(id){
       twimpService.acquireTech(id);
+    }
+
+    $scope.remove = function(id){
+      twimpService.unAcquireTech(id);
     }
   });

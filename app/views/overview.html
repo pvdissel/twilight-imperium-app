@@ -8,11 +8,11 @@
     <p>{{tech.name}}</p>
   </div>
   <h3>Acquired Technologies</h3>
-  <div id="acquiredTechs" ng-repeat="tech in acquiredTechs">
-    <p>{{tech.name}}</p>
+  <div id="acquiredTechs" ng-repeat="tech in acquiredTechs" >
+    <p ng-click="remove('{{tech.id}}')">{{tech.name}}</p>
   </div>
   <h3>All Technologies</h3>
-  <div id="allTechs" ng-repeat="tech in allTechs">
+  <div id="allTechs" ng-repeat="tech in availableTechs">
     <p ng-click="add('{{tech.id}}')">{{tech.name}}</p>
   </div>
 </div>
