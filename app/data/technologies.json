@@ -134,7 +134,7 @@
     "id": "26",
     "name": "Transfabrication",
     "type": "General technology",
-	"expansion": "Shards of the Throne"
+    "expansion": "Shards of the Throne"
   },
   {
     "id": "27",
@@ -166,236 +166,236 @@
     "id": "32",
     "name": "Transit Diodes",
     "type": "General technology"
-  }, 
+  },
   {
     "id": "33",
     "name": "L4 Disruptors",
     "type": "Racial technology",
-	"race": "1",
+    "race": "1",
     "expansion": "Shards of the Throne"
-  }, 
+  },
   {
     "id": "34",
     "name": "Noneuclidian Shielding",
     "type": "Racial technology",
-	"race": "1",
+    "race": "1",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "35",
     "name": "Floating Factories",
     "type": "Racial technology",
-	"race": "2",
+    "race": "2",
     "expansion": "Shards of the Throne"
-  }, 
+  },
   {
     "id": "36",
     "name": "Chaos-Mapping",
     "type": "Racial technology",
-	"race": "2",
+    "race": "2",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "37",
     "name": "Production Centers",
     "type": "Racial technology",
-	"race": "3",
+    "race": "3",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "38",
     "name": "Quantum Datahub Node",
     "type": "Racial technology",
-	"race": "3",
+    "race": "3",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "39",
     "name": "Mark II Advanced Carriers",
     "type": "Racial technology",
-	"race": "4",
+    "race": "4",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "40",
     "name": "Spec Ops Training",
     "type": "Racial technology",
-	"race": "4",
+    "race": "4",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "41",
     "name": "Salvage Operations",
     "type": "Racial technology",
-	"race": "5",
+    "race": "5",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "42",
     "name": "Mirror Computing",
     "type": "Racial technology",
-	"race": "5",
+    "race": "5",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "43",
     "name": "Telepathic Mind Weapon",
     "type": "Racial technology",
-	"race": "6",
+    "race": "6",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "44",
     "name": "Hybrid Crystal Drives",
     "type": "Racial technology",
-	"race": "6",
+    "race": "6",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "45",
     "name": "Valefar Assimilator",
     "type": "Racial technology",
-	"race": "7",
+    "race": "7",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "46",
     "name": "Valkyrie Armor",
     "type": "Racial technology",
-	"race": "8",
+    "race": "8",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "47",
     "name": "Exotrireme",
     "type": "Racial technology",
-	"race": "8",
+    "race": "8",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "48",
     "name": "Spatial Conduit Network",
     "type": "Racial technology",
-	"race": "9",
+    "race": "9",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "49",
     "name": "Electro-Resonance Turbines",
     "type": "Racial technology",
-	"race": "9",
+    "race": "9",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "50",
     "name": "Bioptic Recyclers",
     "type": "Racial technology",
-	"race": "10",
+    "race": "10",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "51",
     "name": "Lazax Gate Folding",
     "type": "Racial technology",
-	"race": "10",
+    "race": "10",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "52",
     "name": "Diplomats",
     "type": "Racial technology",
-	"race": "11",
+    "race": "11",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "53",
     "name": "Instinct Training",
     "type": "Racial technology",
-	"race": "11",
+    "race": "11",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "54",
     "name": "Shuttle Logistics",
     "type": "Racial technology",
-	"race": "12",
+    "race": "12",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "55",
     "name": "Mageon Implants",
     "type": "Racial technology",
-	"race": "12",
+    "race": "12",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "56",
     "name": "Fanaticism",
     "type": "Racial technology",
-	"race": "13",
+    "race": "13",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "57",
     "name": "Yin Spinner",
     "type": "Racial technology",
-	"race": "13",
+    "race": "13",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "58",
     "name": "Magmus Reactor",
     "type": "Racial technology",
-	"race": "14",
+    "race": "14",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "59",
     "name": "Nova Seed",
     "type": "Racial technology",
-	"race": "14",
+    "race": "14",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "60",
     "name": "Dimensional Splicers",
     "type": "Racial technology",
-	"race": "15",
+    "race": "15",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "61",
     "name": "Slave Wormhole Generator",
     "type": "Racial technology",
-	"race": "15",
+    "race": "15",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "62",
     "name": "Dreadnought Invasion Pod",
     "type": "Racial technology",
-	"race": "16",
+    "race": "16",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "63",
     "name": "Inheritance Systems",
     "type": "Racial technology",
-	"race": "16",
+    "race": "16",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "64",
     "name": "Bioplasmosis",
     "type": "Racial technology",
-	"race": "17",
+    "race": "17",
     "expansion": "Shards of the Throne"
   },
   {
     "id": "65",
     "name": "Spore Acceleration",
     "type": "Racial technology",
-	"race": "17",
+    "race": "17",
     "expansion": "Shards of the Throne"
   }
 ]
