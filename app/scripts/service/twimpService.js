@@ -115,8 +115,9 @@
     }
 
     function removeFromAvailableTechs(tech) {
-      var index = allTechnologies.indexOf(tech);
+      var index = availableTechs.indexOf(tech);
       availableTechs.splice(index, 1);
+      debugger;
     }
 
     return {
