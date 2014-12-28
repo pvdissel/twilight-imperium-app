@@ -120,7 +120,6 @@
     function removeFromAvailableTechs(tech) {
       var index = availableTechs.indexOf(tech);
       availableTechs.splice(index, 1);
-      debugger;
     }
 
     var getUnits = function(){
