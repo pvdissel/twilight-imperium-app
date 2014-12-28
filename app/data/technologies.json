@@ -20,6 +20,19 @@
     "id": "2",
     "name": "Automated Defense Turrets",
     "type": "Warfare technology",
+    "modifiers": [
+      {
+        "unit": "3",
+        "movement": "0",
+        "attack": "2",
+        "specials": [
+          {
+            "name": "Anti-Fighter Barrage",
+            "attacks": "1"
+          }
+        ]
+      }
+    ],
     "expansion": "Shattered Empire"
   },
   {
