@@ -8,6 +8,19 @@
     </li>
   </ul>
   <div class="panel-body">
-    UNITS
+    <table>
+      <thead>
+      <td>Unit</td>
+      <td>Cost</td>
+      <td>Battle</td>
+      <td>Movement</td>
+      </thead>
+      <tr ng-repeat="unit in units">
+        <td>{{unit.name}}</td>
+        <td>{{unit.cost}}</td>
+        <td>{{unit.attack}} ({{unit.attacks}}x)</td>
+        <td>{{unit.move}}</td>
+      </tr>
+    </table>
   </div>
 </div>

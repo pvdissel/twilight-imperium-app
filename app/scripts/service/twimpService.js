@@ -1,8 +1,6 @@
 'use strict';
 
 (function () {
-
-
   var twimpService = function ($http) {
     var races;
     var currentRace;
@@ -11,6 +9,7 @@
     var racialTechs;
     var acquiredTechs = [];
     var player = [];
+    var units;
 
 
     $http.get('data/races.json').success(function (data) {
@@ -19,6 +18,10 @@
 
     $http.get('data/technologies.json').success(function (data) {
       allTechnologies = data;
+    });
+
+    $http.get('data/units.json').success(function (data) {
+      units = data;
     });
 
     var getPlayer = function () {
@@ -119,6 +122,10 @@
       availableTechs.splice(index, 1);
     }
 
+    var getUnits = function(){
+      return units;
+    }
+
     return {
       setName: setName,
       setRace: setRace,
@@ -129,7 +136,8 @@
       getAcquiredTechs: getAcquiredTechs,
       getAvailableTechs: getAvailableTechs,
       acquireTech: acquireTech,
-      unAcquireTech: unAcquireTech
+      unAcquireTech: unAcquireTech,
+      getUnits:getUnits
     };
   }
 
