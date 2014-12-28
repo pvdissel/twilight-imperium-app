@@ -88,7 +88,13 @@
 
     var setRace = function (id) {
       currentRace = findRace(id);
-      availableTechs = allTechnologies.slice(0);
+      availableTechs = allTechnologies.slice(0).filter(function(item){
+        if (item.type == "Racial technology"){
+          return item.race == id;
+        }
+
+        return true;
+      });
 
       determineRacialTechs();
     }
