@@ -5,6 +5,7 @@
     "move": "1",
     "attack": "9",
     "attacks": "1",
+    "range": "0",
     "carry": "6",
     "cost": "3",
     "prodAmount": "1"
@@ -15,6 +16,7 @@
     "move": "0",
     "attack": "9",
     "attacks": "1",
+    "range": "0",
     "carry": "0",
     "cost": "1",
     "prodAmount": "2"
@@ -25,6 +27,7 @@
     "move": "2",
     "attack": "9",
     "attacks": "1",
+    "range": "0",
     "carry": "0",
     "cost": "1",
     "prodAmount": "1",
@@ -42,6 +45,7 @@
     "move": "2",
     "attack": "7",
     "attacks": "1",
+    "range": "0",
     "carry": "0",
     "cost": "2",
     "prodAmount": "1"
@@ -52,6 +56,7 @@
     "move": "1",
     "attack": "5",
     "attacks": "1",
+    "range": "0",
     "carry": "0",
     "cost": "5",
     "prodAmount": "1"
@@ -62,6 +67,7 @@
     "move": "2",
     "attack": "3",
     "attacks": "3",
+    "range": "0",
     "carry": "6",
     "cost": "12",
     "prodAmount": "1"
@@ -72,6 +78,7 @@
     "move": "0",
     "attack": "6",
     "attacks": "1",
+    "range": "1",
     "carry": "0",
     "cost": "2",
     "prodAmount": "1"
@@ -82,6 +89,7 @@
     "move": "0",
     "attack": "8",
     "attacks": "1",
+    "range": "0",
     "carry": "0",
     "cost": "1",
     "prodAmount": "2"
@@ -92,6 +100,7 @@
     "move": "0",
     "attack": "5",
     "attacks": "1",
+    "range": "0",
     "carry": "0",
     "cost": "0",
     "prodAmount": "0"
@@ -102,6 +111,7 @@
     "move": "0",
     "attack": "6",
     "attacks": "2",
+    "range": "0",
     "carry": "0",
     "cost": "2",
     "prodAmount": "1"
@@ -112,6 +122,7 @@
     "move": "0",
     "attack": "0",
     "attacks": "0",
+    "range": "0",
     "carry": "0",
     "cost": "10",
     "prodAmount": "1"
@@ -122,6 +133,7 @@
     "move": "0",
     "attack": "0",
     "attacks": "0",
+    "range": "0",
     "carry": "3",
     "cost": "4",
     "prodAmount": "1"
