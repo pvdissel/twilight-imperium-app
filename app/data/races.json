@@ -12,6 +12,7 @@
     "id": "2",
     "name": "The Clan of Saar",
     "expansion": "Shattered Empire",
+    "icon": "images/races/the_clan_of_saar.gif",
     "startingTechs": [
       "9",
       "11"
