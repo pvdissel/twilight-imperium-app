@@ -1,5 +1,5 @@
 <div class="panel panel-primary">
-  <div class="panel-heading">{{player.name}} ({{currentRace.name}})</div>
+  <div class="panel-heading">{{player.name | uppercase}} ({{currentRace.name | uppercase}})</div>
   <ul class="list-group">
     <li class="list-group-item">
       <button>Tech</button>
@@ -21,13 +21,14 @@
       <!-- Default panel contents -->
       <div class="panel-heading">Acquired Technologies</div>
       <ul class="list-group" id="acquiredTechs">
-        <li class="list-group-item" ng-click="remove('{{tech.id}}')" ng-repeat="tech in acquiredTechs">{{tech.name}}</li>
+        <li class="list-group-item" ng-click="remove('{{tech.id}}')" ng-repeat="tech in acquiredTechs">{{tech.name}}
+        </li>
       </ul>
     </div>
 
     <div class="panel panel-default">
       <!-- Default panel contents -->
-      <div class="panel-heading">All Technologies</div>
+      <div class="panel-heading">Available Technologies</div>
       <ul class="list-group" id="allTechs">
         <li class="list-group-item" ng-click="add('{{tech.id}}')" ng-repeat="tech in availableTechs">{{tech.name}}</li>
       </ul>
