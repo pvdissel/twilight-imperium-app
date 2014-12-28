@@ -83,6 +83,69 @@
       "9",
       "25",
       "27"
+    ],
+    "modifiers": [
+      {
+        "unit": "1",
+        "movement": 0,
+        "attack": -1,
+        "range": 0,
+        "specials": []
+      },{
+        "unit": "2",
+        "movement": 0,
+        "attack": -1,
+        "range": 0,
+        "specials": []
+      },{
+        "unit": "3",
+        "movement": 0,
+        "attack": -1,
+        "range": 0,
+        "specials": []
+      },{
+        "unit": "4",
+        "movement": 0,
+        "attack": -1,
+        "range": 0,
+        "specials": []
+      },{
+        "unit": "5",
+        "movement": 0,
+        "attack": -1,
+        "range": 0,
+        "specials": []
+      },{
+        "unit": "6",
+        "movement": 0,
+        "attack": -1,
+        "range": 0,
+        "specials": []
+      },{
+        "unit": "7",
+        "movement": 0,
+        "attack": -1,
+        "range": 0,
+        "specials": []
+      },{
+        "unit": "8",
+        "movement": 0,
+        "attack": -1,
+        "range": 0,
+        "specials": []
+      },{
+        "unit": "9",
+        "movement": 0,
+        "attack": -1,
+        "range": 0,
+        "specials": []
+      },{
+        "unit": "10",
+        "movement": 0,
+        "attack": -1,
+        "range": 0,
+        "specials": []
+      }
     ]
   },
   {

@@ -9,7 +9,6 @@
     var acquiredTechs = [];
     var player = [];
     var units;
-    var unitReference;
 
 
     $http.get('data/races.json').success(function (data) {
@@ -28,8 +27,12 @@
       units = data;
       $http.get('data/units.json').success(function (data) {
         // Because much simpler than deep-cloning it :)
-        unitReference = data;
-        console.table(unitReference);
+        for (var i = 0; i < units.length; i++) {
+          var referenceUnit = findUnit(data, units[i].id);
+          units[i].reference = referenceUnit;
+        }
+
+        console.table(units);
       });
     });
 
@@ -82,14 +85,14 @@
         }
       }
 
-      console.error("Cannot find tech with ID "+ id);
+      console.error("Cannot find tech with ID " + id);
       console.table(allTechnologies);
     }
 
     var setRace = function (id) {
       currentRace = findRace(id);
-      availableTechs = allTechnologies.slice(0).filter(function(item){
-        if (item.type == "Racial technology"){
+      availableTechs = allTechnologies.slice(0).filter(function (item) {
+        if (item.type == "Racial technology") {
           return item.race == id;
         }
 
@@ -97,13 +100,9 @@
       });
 
       determineRacialTechs();
+      applyRacialModifiers();
     }
 
-    function removeRacialFromAvailableTechs(racialTechs) {
-      for (var i = 0; i < racialTechs.length; i++) {
-        removeFromAvailableTechs(racialTechs[i]);
-      }
-    }
 
     var getCurrentRace = function () {
       return currentRace;
@@ -128,7 +127,7 @@
       acquireTech(tech);
     }
 
-    function acquireTech(tech){
+    function acquireTech(tech) {
       acquiredTechs.push(tech);
       removeFromAvailableTechs(tech);
       applyTechToUnits(tech);
@@ -136,14 +135,27 @@
       console.info("Tech " + tech.name + " with ID " + tech.id + " acquired.");
     }
 
+
+    function applyRacialModifiers() {
+      console.info("Applying racial modifiers");
+      
+      if (currentRace.modifiers != null) {
+        doModify(currentRace.modifiers);
+      }
+    }
+
     function applyTechToUnits(tech) {
       console.info("Applying tech " + tech.name + " to units.");
 
       if (tech.modifiers != null) {
-        for (var i = 0; i < tech.modifiers.length; i++) {
-          var unit = findUnit(units, tech.modifiers[i].unit);
-          applyModifierToUnit(tech.modifiers[i], unit);
-        }
+        doModify(tech.modifiers);
+      }
+    }
+
+    function doModify(modifiers) {
+      for (var i = 0; i < modifiers.length; i++) {
+        var unit = findUnit(units, modifiers[i].unit);
+        applyModifierToUnit(modifiers[i], unit);
       }
     }
 
@@ -152,10 +164,6 @@
 
       unit.move = unit.move + modifier.movement;
       unit.attack = unit.attack - modifier.attack;
-
-      var referenceUnit = findUnit(unitReference, unit.id);
-
-      unit.changed = (referenceUnit.move != unit.move) || (referenceUnit.attack != unit.attack);
 
       console.info("Applied modifier, unit now " + JSON.stringify(unit));
     }
@@ -173,9 +181,6 @@
 
       unit.move = unit.move - modifier.movement;
       unit.attack = unit.attack + modifier.attack;
-
-      var referenceUnit = findUnit(unitReference, unit.id);
-      unit.changed = (referenceUnit.move != unit.move) || (referenceUnit.attack != unit.attack);
 
       console.info("Removed modifier, unit now " + JSON.stringify(unit));
     }

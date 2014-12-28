@@ -15,11 +15,11 @@
         <th>Battle</th>
         <th>Movement</th>
       </thead>
-      <tr ng-repeat="unit in units" ng-class="{unitChanged: unit.changed , unitNormal: !unit.changed }">
+      <tr ng-repeat="unit in units">
         <td>{{unit.name}}</td>
         <td>{{unit.cost}}</td>
-        <td>{{unit.attack}} ({{unit.attacks}}x)</td>
-        <td>{{unit.move}}</td>
+        <td ng-class="{unitBetter: unit.reference.attack > unit.attack, unitWorse: unit.reference.attack < unit.attack}">{{unit.attack}} ({{unit.attacks}}x)</td>
+        <td ng-class="{unitBetter: unit.reference.move < unit.move, unitWorse: unit.reference.move > unit.move}">{{unit.move}}</td>
       </tr>
     </table>
   </div>

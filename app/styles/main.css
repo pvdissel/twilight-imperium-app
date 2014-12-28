@@ -8,8 +8,13 @@ body {
   color:black;
 }
 
-.unitChanged{
+.unitBetter{
+  font-weight: bold;
   color:green;
+}
+.unitWorse{
+  font-weight: bold;
+  color:red;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
