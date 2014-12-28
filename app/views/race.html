@@ -2,6 +2,6 @@
   	<div class="panel-heading">Hello, {{player.name}}. Please select a race.</div>
   	<div class="panel-body" id="raceSelect">
   		<div ng-repeat="race in races">
-    		<div ng-click="setRace('{{race.id}}')"><img ng-src="{{race.icon}}"/> {{race.name}}</div>
+    		<div ng-click="setRace('{{race.id}}')"><img ng-src="{{race.icon}}" width="32"/> {{race.name}}</div>
   	</div>
 </div>
