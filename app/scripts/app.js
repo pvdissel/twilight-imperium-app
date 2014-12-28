@@ -31,6 +31,10 @@ angular
         templateUrl: 'views/technology.html',
         controller: 'TechnologyController'
       })
+      .when('/unit', {
+        templateUrl: 'views/unit.html',
+        controller: 'UnitController'
+      })
       .otherwise({
         redirectTo: '/name'
       });
