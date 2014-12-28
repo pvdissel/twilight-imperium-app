@@ -27,7 +27,14 @@
     "attacks": "1",
     "carry": "0",
     "cost": "1",
-    "prodAmount": "1"
+    "prodAmount": "1",
+    "specials": [
+      {
+        "name": "Anti-Fighter Barrage",
+        "attack": "9",
+        "attacks": "2"
+      }
+    ]
   },
   {
     "id": "4",
