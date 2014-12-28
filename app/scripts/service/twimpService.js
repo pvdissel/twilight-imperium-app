@@ -6,7 +6,6 @@
     var currentRace;
     var allTechnologies;
     var availableTechs;
-    var racialTechs;
     var acquiredTechs = [];
     var player = [];
     var units;
@@ -47,7 +46,7 @@
       for (var i = 0; i < allTechnologies.length; i++) {
         if (isInArray(allTechnologies[i].id, currentRace.startingTechs)) {
           console.info("Adding racial tech: " + JSON.stringify(allTechnologies[i]));
-          result.push(allTechnologies[i]);
+          acquireTech(allTechnologies[i]);
         }
       }
 
@@ -83,16 +82,15 @@
         }
       }
 
-      console.error("Canno find tech with ID + id");
+      console.error("Cannot find tech with ID "+ id);
       console.table(allTechnologies);
     }
 
     var setRace = function (id) {
       currentRace = findRace(id);
-      racialTechs = determineRacialTechs();
       availableTechs = allTechnologies.slice(0);
 
-      removeRacialFromAvailableTechs(racialTechs);
+      determineRacialTechs();
     }
 
     function removeRacialFromAvailableTechs(racialTechs) {
@@ -109,10 +107,6 @@
       return races;
     }
 
-    var getStartingTechs = function () {
-      return racialTechs;
-    }
-
     var getAcquiredTechs = function () {
       return acquiredTechs;
     }
@@ -121,23 +115,29 @@
       return availableTechs;
     }
 
-    var acquireTech = function (id) {
+    var acquireTechById = function (id) {
       console.info("Acquiring tech " + id);
 
       var tech = findTech(id);
+      acquireTech(tech);
+    }
+
+    function acquireTech(tech){
       acquiredTechs.push(tech);
       removeFromAvailableTechs(tech);
       applyTechToUnits(tech);
 
-      console.info("Tech " + tech.name + " with ID " + id + " acquired.");
+      console.info("Tech " + tech.name + " with ID " + tech.id + " acquired.");
     }
 
     function applyTechToUnits(tech) {
       console.info("Applying tech " + tech.name + " to units.");
 
-      for (var i = 0; i < tech.modifiers.length; i++) {
-        var unit = findUnit(units, tech.modifiers[i].unit);
-        applyModifierToUnit(tech.modifiers[i], unit);
+      if (tech.modifiers != null) {
+        for (var i = 0; i < tech.modifiers.length; i++) {
+          var unit = findUnit(units, tech.modifiers[i].unit);
+          applyModifierToUnit(tech.modifiers[i], unit);
+        }
       }
     }
 
@@ -209,10 +209,9 @@
       getPlayer: getPlayer,
       getRaces: getRaces,
       getCurrentRace: getCurrentRace,
-      getStartingTechs: getStartingTechs,
       getAcquiredTechs: getAcquiredTechs,
       getAvailableTechs: getAvailableTechs,
-      acquireTech: acquireTech,
+      acquireTech: acquireTechById,
       unAcquireTech: unAcquireTech,
       getUnits: getUnits
     };

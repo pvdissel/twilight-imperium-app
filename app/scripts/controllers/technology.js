@@ -11,7 +11,6 @@ angular.module('twimp3App')
   .controller('TechnologyController', function ($scope, $location, twimpService) {
     $scope.currentRace = twimpService.getCurrentRace();
     $scope.player = twimpService.getPlayer();
-    $scope.startingTechs = twimpService.getStartingTechs();
     $scope.acquiredTechs = twimpService.getAcquiredTechs();
     $scope.availableTechs = twimpService.getAvailableTechs();
 
