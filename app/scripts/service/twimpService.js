@@ -10,18 +10,28 @@
     var acquiredTechs = [];
     var player = [];
     var units;
+    var unitReference;
 
 
     $http.get('data/races.json').success(function (data) {
       races = data;
+
+      console.table(races);
     });
 
     $http.get('data/technologies.json').success(function (data) {
       allTechnologies = data;
+
+      console.table(allTechnologies);
     });
 
     $http.get('data/units.json').success(function (data) {
       units = data;
+      $http.get('data/units.json').success(function (data) {
+        // Because much simpler than deep-cloning it :)
+        unitReference = data;
+        console.table(unitReference);
+      });
     });
 
     var getPlayer = function () {
@@ -36,9 +46,12 @@
       var result = [];
       for (var i = 0; i < allTechnologies.length; i++) {
         if (isInArray(allTechnologies[i].id, currentRace.startingTechs)) {
+          console.info("Adding racial tech: " + JSON.stringify(allTechnologies[i]));
           result.push(allTechnologies[i]);
         }
       }
+
+      console.table(result);
 
       return result;
     }
@@ -59,6 +72,8 @@
           return races[i];
         }
       }
+
+      console.error("Cannot find race with ID " + id);
     }
 
     function findTech(id) {
@@ -67,6 +82,9 @@
           return allTechnologies[i];
         }
       }
+
+      console.error("Canno find tech with ID + id");
+      console.table(allTechnologies);
     }
 
     var setRace = function (id) {
@@ -104,17 +122,76 @@
     }
 
     var acquireTech = function (id) {
+      console.info("Acquiring tech " + id);
+
       var tech = findTech(id);
       acquiredTechs.push(tech);
       removeFromAvailableTechs(tech);
+      applyTechToUnits(tech);
+
+      console.info("Tech " + tech.name + " with ID " + id + " acquired.");
+    }
+
+    function applyTechToUnits(tech) {
+      console.info("Applying tech " + tech.name + " to units.");
+
+      for (var i = 0; i < tech.modifiers.length; i++) {
+        var unit = findUnit(units, tech.modifiers[i].unit);
+        applyModifierToUnit(tech.modifiers[i], unit);
+      }
+    }
+
+    function applyModifierToUnit(modifier, unit) {
+      console.info("Applying modifier to " + JSON.stringify(unit));
+
+      unit.move = unit.move + modifier.movement;
+      unit.attack = unit.attack - modifier.attack;
+
+      var referenceUnit = findUnit(unitReference, unit.id);
+
+      unit.changed = (referenceUnit.move != unit.move) || (referenceUnit.attack != unit.attack);
+
+      console.info("Applied modifier, unit now " + JSON.stringify(unit));
+    }
+
+    function removeTechFromUnits(tech) {
+      console.info("Removing tech " + tech.name + " from units.");
+      for (var i = 0; i < tech.modifiers.length; i++) {
+        var unit = findUnit(units, tech.modifiers[i].unit);
+        removeModifierFromUnit(tech.modifiers[i], unit);
+      }
+    }
+
+    function removeModifierFromUnit(modifier, unit) {
+      console.info("Removing modifier from " + JSON.stringify(unit));
+
+      unit.move = unit.move - modifier.movement;
+      unit.attack = unit.attack + modifier.attack;
+
+      var referenceUnit = findUnit(unitReference, unit.id);
+      unit.changed = (referenceUnit.move != unit.move) || (referenceUnit.attack != unit.attack);
+
+      console.info("Removed modifier, unit now " + JSON.stringify(unit));
+    }
+
+    function findUnit(haystack, unitId) {
+      for (var i = 0; i < haystack.length; i++) {
+        if (haystack[i].id == unitId) {
+          return haystack[i];
+        }
+      }
     }
 
     var unAcquireTech = function (id) {
+      console.log("Removing tech with ID " + id);
+
       var tech = findTech(id);
       var index = acquiredTechs.indexOf(tech);
 
       acquiredTechs.splice(index, 1);
       availableTechs.push(tech);
+
+      removeTechFromUnits(tech);
     }
 
     function removeFromAvailableTechs(tech) {
@@ -122,7 +199,7 @@
       availableTechs.splice(index, 1);
     }
 
-    var getUnits = function(){
+    var getUnits = function () {
       return units;
     }
 
@@ -137,7 +214,7 @@
       getAvailableTechs: getAvailableTechs,
       acquireTech: acquireTech,
       unAcquireTech: unAcquireTech,
-      getUnits:getUnits
+      getUnits: getUnits
     };
   }
 

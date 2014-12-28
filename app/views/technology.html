@@ -30,7 +30,7 @@
       <!-- Default panel contents -->
       <div class="panel-heading">Available Technologies</div>
       <ul class="list-group" id="allTechs">
-        <li class="list-group-item" ng-click="add('{{tech.id}}')" ng-repeat="tech in availableTechs">{{tech.name}}</li>
+        <li class="list-group-item"  ng-click="add('{{tech.id}}')" ng-repeat="tech in availableTechs | orderBy:type | orderBy:name">{{tech.name}}</li>
       </ul>
     </div>
   </div>

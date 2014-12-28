@@ -6,13 +6,13 @@
     "modifiers": [
       {
         "unit": "3",
-        "movement": "0",
-        "attack": "1"
+        "movement": 0,
+        "attack": 1
       },
       {
         "unit": "4",
-        "movement": "0",
-        "attack": "1"
+        "movement": 0,
+        "attack": 1
       }
     ]
   },
