@@ -1,7 +1,8 @@
 <div class="panel panel-primary">
   	<div class="panel-heading">Hello, {{player.name}}. Please select a race.</div>
   	<div class="panel-body" id="raceSelect">
-  		<div ng-repeat="race in races">
-    		<div ng-click="setRace('{{race.id}}')"><img ng-src="{{race.icon}}"/> {{race.name}}</div>
+  		<ul class="list-group">
+    		<li class="list-group-item" ng-repeat="race in races" ng-click="setRace('{{race.id}}')"><img ng-src="{{race.icon}}" width="32"/> {{race.name}}</li>
+    	</ul>
   	</div>
 </div>
