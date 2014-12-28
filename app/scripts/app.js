@@ -27,9 +27,9 @@ angular
         templateUrl: 'views/race.html',
         controller: 'RaceController'
       })
-      .when('/overview', {
-        templateUrl: 'views/overview.html',
-        controller: 'OverviewController'
+      .when('/technology', {
+        templateUrl: 'views/technology.html',
+        controller: 'TechnologyController'
       })
       .otherwise({
         redirectTo: '/name'

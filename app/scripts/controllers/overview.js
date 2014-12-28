@@ -8,7 +8,7 @@
  * Controller of the twimp3App
  */
 angular.module('twimp3App')
-  .controller('OverviewController', function ($scope, $location, twimpService) {
+  .controller('TechnologyController', function ($scope, $location, twimpService) {
     $scope.currentRace = twimpService.getCurrentRace();
     $scope.player = twimpService.getPlayer();
     $scope.startingTechs = twimpService.getStartingTechs();

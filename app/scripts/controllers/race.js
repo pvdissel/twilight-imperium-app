@@ -14,6 +14,6 @@ angular.module('twimp3App')
 
     $scope.setRace = function(id){
       twimpService.setRace(id);
-      $location.path("/overview");
+      $location.path("/technology");
     }
   });
