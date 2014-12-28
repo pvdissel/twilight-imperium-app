@@ -1,18 +1,37 @@
-<div>
-  <p>{{player.name}} ({{currentRace.name}})</p>
-  <button>Tech</button>
-  <button>Combat</button>
-  <button>Unit</button>
-  <h3>Starting Technologies</h3>
-  <div id="startingTechs" ng-repeat="tech in startingTechs">
-    <p>{{tech.name}}</p>
+<div class="panel panel-primary">
+  <div class="panel-heading">{{player.name}} ({{currentRace.name}})</div>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <button>Tech</button>
+      <button>Combat</button>
+      <button>Unit</button>
+    </li>
+  </ul>
+  <div class="panel-body">
+    
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Starting Technologies</div>
+      <ul class="list-group" id="startingTechs">
+        <li class="list-group-item" ng-repeat="tech in startingTechs">{{tech.name}}</li>
+      </ul>
+    </div>
+
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Acquired Technologies</div>
+      <ul class="list-group" id="acquiredTechs">
+        <li class="list-group-item" ng-repeat="tech in acquiredTechs">{{tech.name}}</li>
+      </ul>
+    </div>
+
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">All Technologies</div>
+      <ul class="list-group" id="allTechs">
+        <li class="list-group-item" ng-click="add('{{tech.id}}')" ng-repeat="tech in allTechs">{{tech.name}}</li>
+      </ul>
+    </div>
   </div>
-  <h3>Acquired Technologies</h3>
-  <div id="acquiredTechs" ng-repeat="tech in acquiredTechs">
-    <p>{{tech.name}}</p>
-  </div>
-  <h3>All Technologies</h3>
-  <div id="allTechs" ng-repeat="tech in allTechs">
-    <p ng-click="add('{{tech.id}}')">{{tech.name}}</p>
-  </div>
+
 </div>
