@@ -2,121 +2,140 @@
   {
     "id": "1",
     "name": "Carrier",
-    "move": 1,
-    "attack": 9,
-    "attacks": 1,
-    "carry": 6,
-    "cost": 3,
-    "prodAmount": 1
+    "move": "1",
+    "attack": "9",
+    "attacks": "1",
+    "range": "0",
+    "carry": "6",
+    "cost": "3",
+    "prodAmount": "1"
   },
   {
     "id": "2",
     "name": "Fighter",
-    "move": 0,
-    "attack": 9,
-    "attacks": 1,
-    "carry": 0,
-    "cost": 1,
-    "prodAmount": 2
+    "move": "0",
+    "attack": "9",
+    "attacks": "1",
+    "range": "0",
+    "carry": "0",
+    "cost": "1",
+    "prodAmount": "2"
   },
   {
     "id": "3",
     "name": "Destroyer",
-    "move": 2,
-    "attack": 9,
-    "attacks": 1,
-    "carry": 0,
-    "cost": 1,
-    "prodAmount": 1
+    "move": "2",
+    "attack": "9",
+    "attacks": "1",
+    "range": "0",
+    "carry": "0",
+    "cost": "1",
+    "prodAmount": "1",
+    "specials": [
+      {
+        "name": "Anti-Fighter Barrage",
+        "attack": "9",
+        "attacks": "2"
+      }
+    ]
   },
   {
     "id": "4",
     "name": "Cruiser",
-    "move": 2,
-    "attack": 7,
-    "attacks": 1,
-    "carry": 0,
-    "cost": 2,
-    "prodAmount": 1
+    "move": "2",
+    "attack": "7",
+    "attacks": "1",
+    "range": "0",
+    "carry": "0",
+    "cost": "2",
+    "prodAmount": "1"
   },
   {
     "id": "5",
     "name": "Dreadnought",
-    "move": 1,
-    "attack": 5,
-    "attacks": 1,
-    "carry": 0,
-    "cost": 5,
-    "prodAmount": 1
+    "move": "1",
+    "attack": "5",
+    "attacks": "1",
+    "range": "0",
+    "carry": "0",
+    "cost": "5",
+    "prodAmount": "1"
   },
   {
     "id": "6",
     "name": "War Sun",
-    "move": 2,
-    "attack": 3,
-    "attacks": 3,
-    "carry": 6,
-    "cost": 12,
-    "prodAmount": 1
+    "move": "2",
+    "attack": "3",
+    "attacks": "3",
+    "range": "0",
+    "carry": "6",
+    "cost": "12",
+    "prodAmount": "1"
   },
   {
     "id": "7",
     "name": "PDS",
-    "move": 0,
-    "attack": 6,
-    "attacks": 1,
-    "carry": 0,
-    "cost": 2,
-    "prodAmount": 1
+    "move": "0",
+    "attack": "6",
+    "attacks": "1",
+    "range": "1",
+    "carry": "0",
+    "cost": "2",
+    "prodAmount": "1"
   },
   {
     "id": "8",
     "name": "Ground Force",
-    "move": 0,
-    "attack": 8,
-    "attacks": 1,
-    "carry": 0,
-    "cost": 1,
-    "prodAmount": 2
+    "move": "0",
+    "attack": "8",
+    "attacks": "1",
+    "range": "0",
+    "carry": "0",
+    "cost": "1",
+    "prodAmount": "2"
   },
   {
     "id": "9",
     "name": "Shock Troop",
-    "move": 0,
-    "attack": 5,
-    "attacks": 1,
-    "carry": 0,
-    "cost": 0,
-    "prodAmount": 0
+    "move": "0",
+    "attack": "5",
+    "attacks": "1",
+    "range": "0",
+    "carry": "0",
+    "cost": "0",
+    "prodAmount": "0"
   },
   {
     "id": "10",
     "name": "Mechanized",
-    "move": 0,
-    "attack": 6,
-    "attacks": 2,
-    "carry": 0,
-    "cost": 2,
-    "prodAmount": 1
+    "move": "0",
+    "attack": "6",
+    "attacks": "2",
+    "range": "0",
+    "carry": "0",
+    "cost": "2",
+    "prodAmount": "1"
   },
   {
     "id": "11",
     "name": "Flagship",
-    "move": 0,
-    "attack": 0,
-    "attacks": 0,
-    "carry": 0,
-    "cost": 10,
-    "prodAmount": 1
+    "move": "0",
+    "attack": "0",
+    "attacks": "0",
+    "range": "0",
+    "carry": "0",
+    "cost": "10",
+    "prodAmount": "1"
   },
   {
     "id": "12",
     "name": "Space Dock",
-    "move": 0,
-    "attack": 0,
-    "attacks": 0,
-    "carry": 3,
-    "cost": 4,
-    "prodAmount": 1
+    "move": "0",
+    "attack": "0",
+    "attacks": "0",
+    "range": "0",
+    "carry": "3",
+    "cost": "4",
+    "prodAmount": "1"
   }
 ]

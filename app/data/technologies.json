@@ -6,13 +6,17 @@
     "modifiers": [
       {
         "unit": "3",
-        "movement": 0,
-        "attack": 1
+        "movement": "0",
+        "attack": "1",
+        "range": "0",
+        "specials": []
       },
       {
         "unit": "4",
-        "movement": 0,
-        "attack": 1
+        "movement": "0",
+        "attack": "1",
+        "range": "0",
+        "specials": []
       }
     ]
   },
@@ -20,17 +24,49 @@
     "id": "2",
     "name": "Automated Defense Turrets",
     "type": "Warfare technology",
+    "modifiers": [
+      {
+        "unit": "3",
+        "movement": "0",
+        "attack": "2",
+        "range": "0",
+        "specials": [
+          {
+            "name": "Anti-Fighter Barrage",
+            "attacks": "1"
+          }
+        ]
+      }
+    ],
     "expansion": "Shattered Empire"
   },
   {
     "id": "3",
     "name": "Deep Space Cannon",
-    "type": "Warfare technology"
+    "type": "Warfare technology",
+    "modifiers": [
+      {
+        "unit": "7",
+        "movement": "0",
+        "attack": "0",
+        "range": "1",
+        "specials": []
+      }
+    ]
   },
   {
     "id": "4",
     "name": "Magen Defense Grid",
-    "type": "Warfare technology"
+    "type": "Warfare technology",
+    "modifiers": [
+      {
+        "unit": "7",
+        "movement": "0",
+        "attack": "1",
+        "range": "0",
+        "specials": []
+      }
+    ]
   },
   {
     "id": "5",
@@ -67,7 +103,16 @@
   {
     "id": "11",
     "name": "XRD Transporters",
-    "type": "Warfare technology"
+    "type": "Warfare technology",
+    "modifiers": [
+      {
+        "unit": "1",
+        "movement": "1",
+        "attack": "0",
+        "range": "0",
+        "specials": []
+      }
+    ]
   },
   {
     "id": "12",
@@ -88,17 +133,51 @@
   {
     "id": "15",
     "name": "Type IV Drive",
-    "type": "Warfare technology"
+    "type": "Warfare technology",
+    "modifiers": [
+      {
+        "unit": "4",
+        "movement": "1",
+        "attack": "0",
+        "range": "0",
+        "specials": []
+      },
+      {
+        "unit": "5",
+        "movement": "1",
+        "attack": "0",
+        "range": "0",
+        "specials": []
+      }
+    ]
   },
   {
     "id": "16",
     "name": "Advanced Fighters",
-    "type": "Warfare technology"
+    "type": "Warfare technology",
+    "modifiers": [
+      {
+        "unit": "2",
+        "movement": "2",
+        "attack": "1",
+        "range": "0",
+        "specials": []
+      }
+    ]
   },
   {
     "id": "17",
     "name": "Cybernetics",
-    "type": "Biotechnology"
+    "type": "Biotechnology",
+    "modifiers": [
+      {
+        "unit": "2",
+        "movement": "0",
+        "attack": "1",
+        "range": "0",
+        "specials": []
+      }
+    ]
   },
   {
     "id": "18",
@@ -108,7 +187,23 @@
   {
     "id": "19",
     "name": "Gen Synthesis",
-    "type": "Biotechnology"
+    "type": "Biotechnology",
+    "modifiers": [
+      {
+        "unit": "8",
+        "movement": "0",
+        "attack": "1",
+        "range": "0",
+        "specials": []
+      },
+      {
+        "unit": "9",
+        "movement": "0",
+        "attack": "1",
+        "range": "0",
+        "specials": []
+      }
+    ]
   },
   {
     "id": "20",
