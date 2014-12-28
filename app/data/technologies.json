@@ -2,7 +2,19 @@
   {
     "id": "1",
     "name": "Hylar V Assault Laser",
-    "type": "Warfare technology"
+    "type": "Warfare technology",
+    "modifiers": [
+      {
+        "unit": "3",
+        "movement": "0",
+        "attack": "1"
+      },
+      {
+        "unit": "4",
+        "movement": "0",
+        "attack": "1"
+      }
+    ]
   },
   {
     "id": "2",
