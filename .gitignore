@@ -4,9 +4,12 @@ dist
 .sass-cache
 bower_components
 .idea
+.DS_Store
 www/
 platforms/android/assets/
 platforms/android/assets/www/index.html
 platforms/android/CordovaLib/ant-build/
 platforms/android/ant-build/
-.DS_Store
+platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/
+platforms/ios/TwimpApp.xcodeproj/project.xcworkspace/
+platforms/ios/TwimpApp.xcodeproj/xcuserdata/
